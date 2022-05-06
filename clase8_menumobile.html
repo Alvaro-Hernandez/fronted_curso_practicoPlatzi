@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Home Mobile</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm:16px;
+            --md:20px;
+            --lg:24px;
+        }
+
+        body {
+            margin:0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .mobile-menu{
+            padding: 24px;
+        }
+
+        .mobile-menu a{
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+        }
+
+        .mobile-menu ul{
+            padding: 0;
+            margin: 24px 0 0;
+            list-style: none;
+        }
+        
+        .mobile-menu ul:nth-child(1){
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+
+        .mobile-menu ul:nth-child(3){
+            margin-top:100px;
+        }
+
+        .mobile-menu ul li{
+            margin-bottom: 24px;
+        }
+
+        .mobile-menu .email{
+            font-size: var(--sm);
+            font-weight: 300;
+        }
+
+        .mobile-menu .sign-out{
+            color: var(--hospital-green);
+            font-size: var(--sm);
+        }
+    </style>
+</head>
+<body>
+    <div class="mobile-menu">
+        <ul>
+            <li>
+                <a href="/">CATEGORIAS</a>
+            </li>
+            <li>
+                <a href="/">All</a>
+            </li>
+            <li>
+                <a href="/">Clothes</a>
+            </li>
+            <li>
+                <a href="/">Electronics</a>
+            </li>
+            <li>
+                <a href="/">Furnitures</a>
+            </li>
+            <li>
+                <a href="/">Toys</a>
+            </li>
+            <li>
+        </ul>
+        <ul>
+            <li>
+                <a href="/">My Ordes</a>
+            </li>
+            <li>
+                <a href="/">My account</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="/" class="email">marcia@example.com</a>
+            </li>
+            <li>
+                <a href="/" class="sign-out">Sign out</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
