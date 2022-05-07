@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Produto</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm:16px;
+            --md:20px;
+            --lg:24px;
+        }
+
+        body {
+            margin:0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .product-detail{
+            width:360px;
+            padding-bottom:24px;
+            position: absolute;
+            right: 0;
+        }
+
+        .product-detail-close{
+            background-color: var(--white);
+            width: 14px;
+            height:14px;
+            position:absolute;
+            top: 12px;
+            left: 12px;
+            z-index: 2;
+            padding: 12px;
+            border-radius: 50%;
+        }
+
+        .product-detail-close:hover{
+            cursor:pointer;
+        }
+
+        .product-detail > img:nth-child(2){
+            width:100%;
+            height:360px;
+            object-fit: cover;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .btn-primary{
+            height: 50px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            color: var(--white);
+            font-size: var(--md);
+            font-weight: bold;
+            background-color: var(--hospital-green);
+            cursor: pointer;
+        }
+
+        .add-to-cart-btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-info{
+            margin: 24px 24px 0 24px;
+        }
+
+        .product-info p:nth-child(1){
+            font-weight: bold;
+            font-size:var(--md);
+            margin-top:0;
+            margin-bottom:4px;
+        }
+
+        .product-info p:nth-child(2){
+            color: var(--very-light-pink);
+            font-size:var(--md);
+            margin-top:0;
+            margin-bottom:33px;
+        }
+
+        .product-info p:nth-child(3){
+            color: var(--very-light-pink);
+            font-size:var(--sm);
+            margin-top:0;
+            margin-bottom:33px;
+        }
+
+        @media (max-width: 640px) {
+
+            .product-detail{
+                width: 100%;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <aside class="product-detail">
+        <div class="product-detail-close">
+            <img src="./Platzi_YardSale_Icons/icon_close.png" alt="Close">
+        </div>
+        <img src="./Platzi_YardSale_Logos/Bici.jpeg" alt="Img Bici">
+        <div class="product-info">
+            <p>$35,00</p>
+            <p>$Bike</p>
+            <p>With its functional and practical design, this bike also fulfills a decorative function, 
+                adding personality and a retro-vintage aesthetic to your house✌️</p>
+            <button class="btn-primary add-to-cart-btn">
+                <img src="./Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="Add to Cart">
+                Att to cart
+            </button>
+        </div>
+    </aside>
+</body>
+</html>
